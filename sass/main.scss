@@ -1,9 +1,6 @@
 
-
-
-
 $primary-color: #444;
-$back-color: rgb(78, 112, 158);
+$back-color: rgb(3, 42, 73);
 $secondary-color: yellow;
 $show-home-image: true;
 $home-image: url(../../img/yo.jpeg);
@@ -39,9 +36,10 @@ $background-opacity: 0.7;
 .menu-btn{
     position: absolute;
     z-index: 3;
-    right: 35px;
+    right: -50px;
     top: 35px;
     cursor: pointer;
+    //visibility: visible;
     @include easeOut;
 
     .btn-line{
@@ -71,6 +69,81 @@ $background-opacity: 0.7;
         }
     }
 }
+
+.menu{
+    
+    position: fixed;
+    top : 0;
+    width: 100%;
+    opacity: 0.95;
+    visibility: hidden;
+    
+    &.show{
+        visibility: visible;
+    }
+
+     &-nav {
+        display:  flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        float: right;
+        width: 50%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    &-nav{
+        margin: 0;
+        padding: 0;
+        background: darken($primary-color,5);
+        list-style: none;
+       transform: translate3d(100, -100%, 0);
+        @include easeOut;
+
+        &.show{
+            transform: translate3d(0, 200, 0);
+
+        }
+    }
+
+    .nav-item{
+        transform: translate3d(600px, 0, 0);
+        @include easeOut;
+
+        &.show{
+            transform: translate3d(0, 0, 0);
+
+        }
+    }
+
+}
+
+
+.menu-brand{
+    
+    width: 250px;
+    height: 250px;
+    background: url(../../img/ishan.png);
+    position: absolute;
+    
+    
+    
+    margin-left:42%;
+    margin-right: 68%;
+   
+    background-size: cover;
+    overflow: hidden;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+   
+}
+
+
+
+
+
 
 html{
     font-size: 15px;

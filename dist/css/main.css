@@ -1,7 +1,7 @@
 .menu-btn {
   position: absolute;
   z-index: 3;
-  right: 35px;
+  right: -50px;
   top: 35px;
   cursor: pointer;
   transition: all 0.5s ease-out; }
@@ -20,6 +20,52 @@
     opacity: 0; }
   .close .btn-line:nth-child(3) {
     transform: rotate(-45deg) translate(7px, -6px); }
+
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.95;
+  visibility: hidden; }
+  .menu.show {
+    visibility: visible; }
+  .menu-nav {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden; }
+  .menu-nav {
+    margin: 0;
+    padding: 0;
+    background: #373737;
+    list-style: none;
+    transform: translate3d(100, -100%, 0);
+    transition: all 0.5s ease-out; }
+    .menu-nav.show {
+      transform: translate3d(0, 200, 0); }
+  .menu .nav-item {
+    transform: translate3d(600px, 0, 0);
+    transition: all 0.5s ease-out; }
+    .menu .nav-item.show {
+      transform: translate3d(0, 0, 0); }
+
+.menu-brand {
+  width: 250px;
+  height: 250px;
+  background: url(../../img/ishan.png);
+  position: absolute;
+  margin-left: 42%;
+  margin-right: 68%;
+  background-size: cover;
+  overflow: hidden;
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%; }
 
 html {
   font-size: 15px; }
@@ -46,7 +92,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(78, 112, 158, 0.7); }
+      background: rgba(3, 42, 73, 0.7); }
 
 h1, h2, h3 {
   margin: 0;

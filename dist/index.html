@@ -17,9 +17,7 @@
         </div>
 
         <nav class="menu">
-            <div class="menu-brand">
-                <div class="portrait"></div>
-            </div>
+            
             <ul class="menu-nav">
                 <li class="nav-item">
                     <a href="/" class="nav-link"></a>
@@ -42,32 +40,106 @@
 
     </header>
 
+    <center><div class="menu-brand"></div></center>
+
     <main id="home">
-        <h3 class="lg-heading">
-            Ishan Shanware <br>
+       
+        <center>
             
-        </h3>
-        <h2 class="sm-heading">
-            Programming Geek and Enthusiast <br>
-            First Year Undergread @IIIT Bangalore
-        </h2>
-        <div class="icons">
-            <a href="#!">
-                <i class="fa fa-github fa-2x  " style= "color: white;"></i>
-            </a>
-            <a href="#!">
-                <i class="fa fa-linkedin fa-2x"  style= "color: white;"></i>
-            </a>
-            <a href="#!">
-                <i class="fa fa-facebook fa-2x" style= "color: white;"></i>
-            </a>
-        </div>
+            <h3  class="lg-heading">
+                
+                Ishan Shanware <br>
+                <h1>@MegaMind77-coder</h1>
+                <br>
+            </h3>
+        </center>
+        <center><h2 class="sm-heading">
+            I am a First-Year CSE undergrad @ IIIT Bangalore<br>
+            Programming Geek and Enthusiast<br>
+            Beginner Developer<br>
+            First Year Undergrad @IIIT Bangalore
+        </h2></center>
+        
+        <center>
+            <div class="icons">
+                <a href="https://github.com/MegaMind77-coder">
+                    <i class="fa fa-github fa-2x  " style= "color: white;"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ishan-shanware-1078a3165/?originalSubdomain=in">
+                    <i class="fa fa-linkedin fa-2x"  style= "color: white;"></i>
+                </a>
+                <a href="https://www.facebook.com/ishan.shanware">
+                    <i class="fa fa-facebook fa-2x" style= "color: white;"></i>
+                </a>
+            </div></center>
     </main>
     <script src="js/main.js"></script>
 
 
-
-
+    <style>
+        h1 {
+    font-size: 40px;
+  }
+  
+  .text_1 {
+    animation: text1;
+  }
+  
+  .text_2 {
+    animation: text2;
+  }
+  
+  .text_1, .text_2 {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    animation-duration: 20s;
+    animation-timing-function: steps(25, end);
+    animation-iteration-count: infinite;
+  }
+  
+  .text_1::after, .text_2::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    animation: caret infinite;
+    animation-duration: 1s;
+    animation-timing-function: steps(0, end);
+  }
+  
+  @keyframes text2 {
+    0%, 50%, 100% {
+      width: 0;
+    }
+    
+    60%, 90% {
+      width: 10em;
+    }
+  }
+  
+  @keyframes text1 {
+    0%, 50%, 100% {
+      width: 0;
+    }
+    10%, 40% {
+      width: 17em;
+    }
+  }
+  
+  @keyframes caret {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+    </style>
+    <h1 align = 'middle'>
+        <span class="text_1">WEB DEVELOPMENT</span><span class="text_2">CYBER SECUIRITY</span>
+    </h1>
 
 
 </body>
