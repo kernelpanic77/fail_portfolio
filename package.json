@@ -1,0 +1,14 @@
+{
+  "name": "portfolio_2",
+  "version": "1.0.0",
+  "description": "portfolio",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w sass/ -o dist/css/ --recursive"
+  },
+  "author": "Ishan Shanware",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.14.0"
+  }
+}
