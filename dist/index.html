@@ -1,146 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>megamind77-coder</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/main.css">
+  <title>Welcome To My Portfolio</title>
 </head>
+
 <body id="bg-img">
+  
+  <header>
+    <div class="menu-btn">
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+    </div>
+    <nav class="menu">
+      <div class="menu-branding">
+        <div class="portrait"></div>
+      </div>
+      <ul class="menu-nav">
+        <li class="nav-item current">
+          <a href="index.html" class="nav-link">
+            Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">
+            Skills and Resume
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="work.html" class="nav-link">
+            Projects
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main id="home">
+    <div class = 'ishan'>
+      <img width="30%" height="40%"  style ="border-radius: 50%; position: relative; float: right; display: flex;"src="img/ishan.jpg" alt=""></div>
+    </div>
     
-    <header>
-        <div class="menu-btn">
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
-        </div>
-
-        <nav class="menu">
-            
-            <ul class="menu-nav">
-                <li class="nav-item">
-                    <a href="/" class="nav-link"></a>
-                        Home    
-                </li>
-                <li class="nav-item">
-                    <a href="/About.html" class="nav-link"></a>
-                        About   
-                </li>
-                <li class="nav-item">
-                    <a href="/Projects.html" class="nav-link"></a>
-                       Projects    
-                </li>
-                <li class="nav-item">
-                    <a href="/contact.html" class="nav-link"></a>
-                       Contact me!    
-                </li>
-            </ul>
-        </nav>
-
-    </header>
-
-    <center><div class="menu-brand"></div></center>
-
-    <main id="home">
-       
-        <center>
-            
-            <h3  class="lg-heading">
-                
-                Ishan Shanware <br>
-                <h1>@MegaMind77-coder</h1>
-                <br>
-            </h3>
-        </center>
-        <center><h2 class="sm-heading">
-            I am a First-Year CSE undergrad @ IIIT Bangalore<br>
-            Programming Geek and Enthusiast<br>
-            Beginner Developer<br>
-            First Year Undergrad @IIIT Bangalore
-        </h2></center>
-        
-        <center>
-            <div class="icons">
-                <a href="https://github.com/MegaMind77-coder">
-                    <i class="fa fa-github fa-2x  " style= "color: white;"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/ishan-shanware-1078a3165/?originalSubdomain=in">
-                    <i class="fa fa-linkedin fa-2x"  style= "color: white;"></i>
-                </a>
-                <a href="https://www.facebook.com/ishan.shanware">
-                    <i class="fa fa-facebook fa-2x" style= "color: white;"></i>
-                </a>
-            </div></center>
-    </main>
-    <script src="js/main.js"></script>
-
-
-    <style>
-        h1 {
-    font-size: 40px;
-  }
-  
-  .text_1 {
-    animation: text1;
-  }
-  
-  .text_2 {
-    animation: text2;
-  }
-  
-  .text_1, .text_2 {
-    overflow: hidden;
-    white-space: nowrap;
-    display: inline-block;
-    position: relative;
-    animation-duration: 20s;
-    animation-timing-function: steps(25, end);
-    animation-iteration-count: infinite;
-  }
-  
-  .text_1::after, .text_2::after {
-    content: "|";
-    position: absolute;
-    right: 0;
-    animation: caret infinite;
-    animation-duration: 1s;
-    animation-timing-function: steps(0, end);
-  }
-  
-  @keyframes text2 {
-    0%, 50%, 100% {
-      width: 0;
-    }
-    
-    60%, 90% {
-      width: 10em;
-    }
-  }
-  
-  @keyframes text1 {
-    0%, 50%, 100% {
-      width: 0;
-    }
-    10%, 40% {
-      width: 17em;
-    }
-  }
-  
-  @keyframes caret {
-    0%, 100% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-  }
-  
-    </style>
-    <h1 align = 'middle'>
-        <span class="text_1">WEB DEVELOPMENT</span><span class="text_2">CYBER SECUIRITY</span>
+    <h1 class="lg-heading">
+      Ishan
+      <span class="text-secondary">Shanware</span>
+      <h2 class="text-secondary">@Megamind77-coder</h2>
+      
     </h1>
 
+    
+  
+    <h2 class="sm-heading">
+      Software Developer and Programming Enthusaist
+      <br> Currently Pursuing Computer Science @IIIT Bangalore
+    </h2>
+    <div class="icons">
 
+      <a href="https://www.facebook.com/ishan.shanware">
+        <i class="fab fa-facebook fa-2x"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/ishan-shanware-1078a3165/?originalSubdomain=in">
+        <i class="fab fa-linkedin fa-2x"></i>
+      </a>
+      <a href="https://github.com/MegaMind77-coder">
+        <i class="fab fa-github fa-2x"></i>
+      </a>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
 </body>
+
 </html>
